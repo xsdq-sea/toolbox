@@ -334,6 +334,30 @@
         grid-template-columns: 1fr 1fr
       }
 
+      .entry {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px
+      }
+
+      .entry-inputs,
+      .entry-inputs .fields {
+        display: contents
+      }
+
+      .entry .preview {
+        grid-column: 1/-1;
+        grid-row: 2
+      }
+
+      .entry-inputs > .rule,
+      .entry-inputs > #save {
+        grid-column: 1/-1
+      }
+
+      .entry-inputs > #save {
+        justify-self: start
+      }
+
       .amount {
         font-size: 30px
       }
@@ -363,10 +387,6 @@
     }
   </style>
   <style>
-    .scroll-hint {
-      display: none
-    }
-
     @media(max-width:620px) {
       .stats {
         grid-template-columns: repeat(2, minmax(0, 1fr))
@@ -376,8 +396,77 @@
         grid-column: 1/-1
       }
 
-      .scroll-hint {
+      .table-wrap {
+        overflow: visible
+      }
+
+      .records-table,
+      .records-table tbody {
         display: block
+      }
+
+      .records-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap
+      }
+
+      .records-table tbody {
+        display: grid;
+        gap: 12px;
+        margin-top: 16px
+      }
+
+      .records-table tbody tr {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        padding: 14px;
+        background: var(--bg);
+        border: 1px solid var(--line);
+        border-radius: 12px
+      }
+
+      .records-table td {
+        min-width: 0;
+        padding: 0;
+        border: 0;
+        text-align: left;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        font-size: 14px
+      }
+
+      .records-table td::before {
+        content: attr(data-label);
+        display: block;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 3px
+      }
+
+      .records-table td:first-child {
+        grid-column: 1/-1;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--line);
+        font-weight: 600
+      }
+
+      .records-table td.empty {
+        grid-column: 1/-1;
+        padding: 16px 0;
+        border: 0;
+        font-weight: 400;
+        text-align: center
+      }
+
+      .records-table td.empty::before {
+        display: none
       }
     }
   </style>
@@ -431,7 +520,7 @@
       <h2>计算与记录</h2>
       <form id="entry-form">
         <div class="entry">
-          <div>
+          <div class="entry-inputs">
             <div class="fields"><label>日期<input id="date" type="date" required></label><label>指标点位<input id="point"
                   type="number" inputmode="decimal" min="0" step="0.01" placeholder="计算填当前，保存填收盘" required></label>
               <label class="actual-field">实际消耗金额（元）<input id="actual" type="number" inputmode="decimal" min="0" max="1000000" step="0.01" placeholder="填写已实际消耗金额" required></label>
@@ -456,24 +545,23 @@
               id="import" accept=".json,application/json" aria-label="导入备份"></label></div>
       </div>
       <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>日期</th>
-              <th>收盘点位</th>
-              <th>新增下跌</th>
-              <th>收盘建议（元）</th>
-              <th>实际消耗（元）</th>
-              <th>累计偏差（元）</th>
-              <th>剩余（元）</th>
+        <table class="records-table" role="table" aria-label="历史消耗记录">
+          <thead role="rowgroup">
+            <tr role="row">
+              <th role="columnheader">日期</th>
+              <th role="columnheader">收盘点位</th>
+              <th role="columnheader">新增下跌</th>
+              <th role="columnheader">收盘建议（元）</th>
+              <th role="columnheader">实际消耗（元）</th>
+              <th role="columnheader">累计偏差（元）</th>
+              <th role="columnheader">剩余（元）</th>
             </tr>
           </thead>
-          <tbody id="records"></tbody>
+          <tbody id="records" role="rowgroup"></tbody>
         </table>
       </div>
       <p class="quiet muted" id="records-note">最新记录在前。收盘建议按保存的点位计算；余额按实际消耗扣除。累计偏差会在下次创新低时补足或抵扣，未创新低也可如实保存已经发生的消耗。</p>
     </section>
-    <p class="scroll-hint quiet muted">历史记录可左右滑动，查看完整金额。</p>
     <details class="panel" id="cloud-panel">
       <summary>Supabase 云端备份</summary>
       <p class="rule">登录后可将参数与历史记录上传到云端，或在其他设备恢复。登录成功后自动从云端恢复；保存记录后自动上传。本地记录继续保留，也可手动上传或恢复。</p>
@@ -487,7 +575,6 @@
         <p class="rule">首次登录后会记住登录状态，再次打开网页自动连接，无需重复输入密码。密码不会保存；点击“退出登录”可清除记住的登录状态。更换浏览器、设备或清理浏览数据后需重新登录。</p>
         <div class="row">
           <button type="submit" id="cloud-login">登录云端</button>
-          <button type="button" id="cloud-logout" disabled>退出登录</button>
           <button type="button" id="cloud-reconnect" hidden>重新连接</button>
           <button type="button" id="cloud-upload" disabled>上传到云端</button>
           <button type="button" id="cloud-restore" disabled>从云端恢复</button>
@@ -634,8 +721,10 @@
       function renderCloud() {
         const loggedIn = !!cloud.session;
         ['cloud-url', 'cloud-key', 'cloud-email', 'cloud-password'].forEach(field => $(field).disabled = cloud.busy || loggedIn);
-        $('cloud-login').disabled = cloud.busy || loggedIn;
-        $('cloud-logout').disabled = cloud.busy || (!loggedIn && !cloud.savedSession);
+        const canLogOut = loggedIn || !!cloud.savedSession;
+        $('cloud-login').textContent = canLogOut ? '退出登录' : '登录云端';
+        $('cloud-login').type = canLogOut ? 'button' : 'submit';
+        $('cloud-login').disabled = cloud.busy;
         $('cloud-reconnect').hidden = loggedIn || !cloud.savedSession;
         $('cloud-reconnect').disabled = cloud.busy;
         $('cloud-upload').disabled = cloud.busy || !loggedIn || storageBlocked || !active();
@@ -756,6 +845,7 @@
       }
       $('cloud-login-form').addEventListener('submit', event => {
         event.preventDefault();
+        if (cloud.session || cloud.savedSession) { cloudAction(logoutCloud); return; }
         cloudAction(async () => {
           const guard = localGuard();
           cloud.config = cloudConfig(); cloud.remoteRevision = undefined;
@@ -767,14 +857,17 @@
           await restoreAfterLogin(remembered ? '已登录并记住登录状态，下次打开网页会自动连接。' : '登录成功，但浏览器无法保存登录状态，下次打开仍需登录。', guard);
         });
       });
-      $('cloud-logout').addEventListener('click', () => cloudAction(async () => {
+      async function logoutCloud() {
         let remoteError = null;
         try { if (cloud.session) await cloudRequest('/auth/v1/logout?scope=local', { method: 'POST' }, true); } catch (e) { remoteError = e; }
         finally {
           const cleared = forgetCloudSession(); $('cloud-password').value = '';
           cloudMessage(cleared ? '已退出并清除记住的登录状态，本地记录保留。' + (remoteError ? '云端退出请求未成功，请求原因：' + remoteError.message : '') : '本页面已退出，但浏览器未能清除记住的登录状态，请清理本站的登录存储。', !cleared);
         }
-      }));
+      }
+      $('cloud-login').addEventListener('click', () => {
+        if (cloud.session || cloud.savedSession) cloudAction(logoutCloud);
+      });
       $('cloud-reconnect').addEventListener('click', () => cloudAction(restoreCloudLogin));
       async function uploadCloud(automatic = false) {
         if (storageBlocked || !active()) throw new Error('请先保存有效的本地计划。');
@@ -823,6 +916,7 @@
       $('cloud-restore').addEventListener('click', () => cloudAction(() => restoreCloud()));
       function entry() { return L.units($('point').value); }
       const deviation = error => error > 0 ? '少消耗 ' + money(error) : error < 0 ? '多消耗 ' + money(-error) : '一致';
+      const recordLabels = ['日期', '收盘点位', '新增下跌', '收盘建议（元）', '实际消耗（元）', '累计偏差（元）', '剩余（元）'];
       function preview() {
         $('save').disabled = true;
         if (!active()) { $('preview-amount').textContent = '—'; $('preview-reason').textContent = '请先填写并保存计划参数。'; return; }
@@ -859,10 +953,10 @@
         $('record-count').textContent = (p.records.length + (p.upfront > 0 ? 1 : 0)) + ' 条' + (p.upfront > 0 ? '（含底仓）' : ''); $('undo').disabled = !p.records.length || storageBlocked; $('edit-settings').hidden = false;
         const fragment = document.createDocumentFragment();
         for (const r of state.rows.slice().reverse()) {
-          const tr = document.createElement('tr');
-          [r.date, points(r.point), points(r.drop), money(r.amount), money(r.actual), deviation(r.error), money(r.remaining)].forEach((value, i) => { const td = document.createElement('td'); td.textContent = value; if (i === 4 && r.actual > 0) td.className = 'positive'; tr.append(td); }); fragment.append(tr);
+          const tr = document.createElement('tr'); tr.setAttribute('role', 'row');
+          [r.date, points(r.point), points(r.drop), money(r.amount), money(r.actual), deviation(r.error), money(r.remaining)].forEach((value, i) => { const td = document.createElement('td'); td.textContent = value; td.setAttribute('data-label', recordLabels[i]); td.setAttribute('role', 'cell'); if (i === 4 && r.actual > 0) td.className = 'positive'; tr.append(td); }); fragment.append(tr);
         }
-        if (p.upfront > 0) { const tr = document.createElement('tr');[p.upfrontDate + ' · 底仓', points(p.base), '—', money(p.upfront), money(p.upfront), '一致', money(p.budget - p.upfront)].forEach((value, i) => { const td = document.createElement('td'); td.textContent = value; if (i === 4) td.className = 'positive'; tr.append(td); }); fragment.append(tr); }
+        if (p.upfront > 0) { const tr = document.createElement('tr'); tr.setAttribute('role', 'row'); [p.upfrontDate + ' · 底仓', points(p.base), '—', money(p.upfront), money(p.upfront), '一致', money(p.budget - p.upfront)].forEach((value, i) => { const td = document.createElement('td'); td.textContent = value; td.setAttribute('data-label', recordLabels[i]); td.setAttribute('role', 'cell'); if (i === 4) td.className = 'positive'; tr.append(td); }); fragment.append(tr); }
         if (!state.rows.length && !p.upfront) { const tr = document.createElement('tr'), td = document.createElement('td'); td.colSpan = 7; td.className = 'empty'; td.textContent = '尚无记录。收盘后填写真实点位与实际金额并保存。'; tr.append(td); fragment.append(tr); }
         $('records').replaceChildren(fragment); preview();
       }
