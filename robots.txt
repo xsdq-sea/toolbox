@@ -1,0 +1,5 @@
+# Serve this file at the origin root: /robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://xsdq-sea.github.io/toolbox/sitemap.xml
