@@ -1,1 +1,0 @@
-var e=`/toolbox/assets/pdf.worker.min-CgLjDLAk.js`;export{e as default};

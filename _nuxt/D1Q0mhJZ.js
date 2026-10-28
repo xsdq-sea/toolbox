@@ -1,0 +1,1 @@
+import{b as s,c as e,a as o,q as r,s as l}from"#entry";const p={__name:"UiStatus",props:{as:{type:String,default:"p"}},setup(t){return(a,n)=>(s(),e(l(t.as),{class:"status",role:"status","aria-live":"polite"},{default:o(()=>[r(a.$slots,"default")]),_:3}))}};export{p as _};
