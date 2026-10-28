@@ -1,0 +1,28 @@
+# Toolbox · 工具箱
+
+> 本目录收录站内知识查询页面，包括历史文化、社会制度、国家地理与生活常识等内容。
+
+以下链接指向公开网页，主要介绍通过静态 HTML 提供；筛选、交互查询及按需加载的详细资料可能需要浏览器 JavaScript。
+知识与查询资料的来源、数据时点、适用范围及局限以各页面可见说明为准。
+
+## 知识查询
+
+- [警衔与军衔肩章查询 - 人民警察、解放军与武警图鉴 | Toolbox](https://xsdq-sea.github.io/toolbox/rank-insignia.html): 查询中国大陆现行警衔、军衔与武警警衔的名称、等级和肩章图示。支持按星杠特征搜索、等级筛选及军种配色切换，附权威资料来源。
+- [职务与行政级别查询 - 省长、市长、局长是什么级别 | Toolbox](https://xsdq-sea.github.io/toolbox/administrative-levels.html): 按职务、地区机构类型查询常见党政领导职务层次，分别查看综合管理类公务员职级、事业单位管理与专技工勤岗位等级，以及常见专业技术职称名称。
+- [车牌归属地查询 - 民用号牌前缀与地区反查 | Toolbox](https://xsdq-sea.github.io/toolbox/vehicle-plates.html): 输入粤B、浙A等车牌前缀或完整车牌查询常见发牌地区，支持按省级地区筛选、按城市反查。仅查询前缀含义，不查询车辆及车主信息。
+- [亲属称谓查询 - 亲戚关系计算与反向称呼 | Toolbox](https://xsdq-sea.github.io/toolbox/kinship.html): 通过关系按钮或直接输入爸爸的弟弟等亲属关系，查询常用汉语称谓，支持本人性别选择及对方如何称呼我的反向查询。关系在本地计算。
+- [交通标志图鉴 - 常见道路标志含义与外观查询 | Toolbox](https://xsdq-sea.github.io/toolbox/traffic-signs.html): 按名称、分类、颜色和图形特征查询中国大陆常见交通标志，查看简化识别图和含义，区分禁止停车与禁止长时停车、停车让行与减速让行。
+- [衣物洗涤标志查询 - 维护标签与洗衣符号图解 | Toolbox](https://xsdq-sea.github.io/toolbox/laundry-symbols.html): 按图形特征、温度或维护方式查询常见衣物洗涤标志，解释水洗、漂白、翻转干燥、自然干燥、熨烫、专业干洗和湿洗要求。
+- [国家与地区速查 - 名称、旗帜、首都、电话区号与货币 | Toolbox](https://xsdq-sea.github.io/toolbox/countries.html): 本地检索国家与地区的中文英文名称、代码、旗帜、首都或首府、国际电话区号及货币代码，支持按洲别筛选和按区号、货币反查。
+- [学历与学位速查 - 本科、学士、研究生与博士后概念区别 | Toolbox](https://xsdq-sea.github.io/toolbox/education.html): 查询中国大陆常见学历层次、学位层次、学术与专业学位、毕业证与学位证区别，解释同等学力、博士后、全日制和非全日制等易混概念。
+- [历史朝代与君主查询 - 夏商周至清、年号庙号谥号与在位时间 | Toolbox](https://xsdq-sea.github.io/toolbox/dynasties.html): 在本地查询夏商周至清的主要朝代及并立政权起止时间、君主世系、年号、庙号、谥号与分段在位记录，包含先秦君主，标注早期年代争议并提供资料来源。
+- [常用网站与电话查询 - 银行、保险、投诉与便民服务 | Toolbox](https://xsdq-sea.github.io/toolbox/common-contacts.html): 查询中国大陆常用银行、保险、投诉举报、政务便民、通信、邮政快递、交通出行和紧急求助的官方网站及公开服务热线，支持搜索、分类筛选、号码反查和复制，附官方资料来源。
+- [手机号码归属地查询 - 省市与号段原始运营商 | Toolbox](https://xsdq-sea.github.io/toolbox/phone-location.html): 在浏览器本地查询中国大陆手机号或前7位号段的归属省市、号段原始运营商与虚拟运营商品牌，输入内容不上传、不保存。提供数据日期与来源，不代表携号转网后的当前运营商。
+- [人物组合与历史称谓查询 | Toolbox](https://xsdq-sea.github.io/toolbox/historical-people.html): 人物组合、姓名字号、别称、代表作品与庙号谥号年号概念。 支持本地搜索、分类浏览、条目直达与资料来源查看。
+- [国学典籍与诸子百家查询 | Toolbox](https://xsdq-sea.github.io/toolbox/classics-schools.html): 四书五经、十三经、二十四史及诸子学派的书目与代表人物。 支持本地搜索、分类浏览、条目直达与资料来源查看。
+- [科举官职与古代制度查询 | Toolbox](https://xsdq-sea.github.io/toolbox/ancient-institutions.html): 明清科举流程、功名、官职职责、六部、爵位与地方行政沿革。 支持本地搜索、分类浏览、条目直达与资料来源查看。
+- [中国地理与名胜查询 | Toolbox](https://xsdq-sea.github.io/toolbox/china-geography.html): 三山五岳、宗教名山、古都名楼、书院五湖、河流及古今地名。 支持本地搜索、分类浏览、条目直达与资料来源查看。
+- [中国行政区划查询 | Toolbox](https://xsdq-sea.github.io/toolbox/china-divisions.html): 省市县名称、上下级、代码与省份简称省会，港澳台按各自体系列示。 支持本地搜索、分类浏览、条目直达与资料来源查看。
+- [传统历法与节日查询 | Toolbox](https://xsdq-sea.github.io/toolbox/traditional-calendar.html): 天干地支、十二时辰、二十四节气、传统节日与历法称谓。 支持本地搜索、分类浏览、条目直达与资料来源查看。
+- [传统称谓与礼俗查询 | Toolbox](https://xsdq-sea.github.io/toolbox/traditional-etiquette.html): 年龄称谓、亲属敬谦称、礼仪称呼与婚龄纪念称谓。 支持本地搜索、分类浏览、条目直达与资料来源查看。
+- [五行八卦与八门查询 | Toolbox](https://xsdq-sea.github.io/toolbox/five-elements.html): 五行相生相克、八卦符号与先后天方位、奇门八门的基础对应。 支持本地搜索、分类浏览、条目直达与资料来源查看。
