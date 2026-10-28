@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f6f7f3"/>
+  <rect x="42" y="42" width="1116" height="546" rx="30" fill="#fff" stroke="#dce3da" stroke-width="2"/>
+  <rect x="96" y="96" width="88" height="88" rx="24" fill="#1b3029"/>
+  <g fill="none" stroke="#eaf1e7" stroke-width="3" stroke-linejoin="round">
+    <rect x="116" y="124" width="49" height="38" rx="5"/>
+    <path d="M130 124v-9h21v9m-35 15h49m-30-4v12h10v-12"/>
+  </g>
+  <g font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+    <text x="214" y="153" font-size="45" fill="#1b3029">Toolbox · 工具箱</text>
+    <text x="100" y="290" font-size="60" font-weight="600" fill="#1b3029">实用工具，知识速查。</text>
+    <text x="100" y="365" font-size="30" fill="#66756c">计算、处理、查询，日常所需随手可用。</text>
+    <text x="100" y="450" font-size="25" fill="#24654a">日常计算 / 图片与文档 / 历史朝代 / 生活查询</text>
+    <path d="M100 504h1000" stroke="#dce3da" stroke-width="2"/>
+    <text x="100" y="550" font-size="24" fill="#66756c">打开即用，无需安装</text>
+  </g>
+</svg>

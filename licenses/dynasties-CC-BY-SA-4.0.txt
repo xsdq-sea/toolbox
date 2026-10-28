@@ -1,0 +1,17 @@
+Historical dynasty and ruler data / 历史朝代与君主数据
+
+Base source: Wikipedia, 中国君主列表, revision 94366027
+https://zh.wikipedia.org/w/index.php?title=中国君主列表&oldid=94366027
+Authors: Wikipedia contributors (see the linked page history).
+License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+License terms: https://creativecommons.org/licenses/by-sa/4.0/
+Legal code: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+Toolbox modifications: conversion to simplified Chinese; extraction and
+restructuring of factual fields; merging repeated monarchs and regnal periods;
+curated corrections, attribution, uncertainty and scope notes. The resulting
+data snapshot is provided under CC BY-SA 4.0. This data license does not change
+the license of unrelated application source code.
+
+The on-page source panel links the base source and cross-checking references.
+No endorsement by Wikipedia, the referenced museums or other institutions is implied.
