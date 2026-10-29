@@ -26,3 +26,4 @@
 - [传统历法与节日查询 | Toolbox](https://xsdq-sea.github.io/toolbox/traditional-calendar.html): 天干地支、十二时辰、二十四节气、传统节日与历法称谓。 支持本地搜索、分类浏览、条目直达与资料来源查看。
 - [传统称谓与礼俗查询 | Toolbox](https://xsdq-sea.github.io/toolbox/traditional-etiquette.html): 年龄称谓、亲属敬谦称、礼仪称呼与婚龄纪念称谓。 支持本地搜索、分类浏览、条目直达与资料来源查看。
 - [五行八卦与八门查询 | Toolbox](https://xsdq-sea.github.io/toolbox/five-elements.html): 五行相生相克、八卦符号与先后天方位、奇门八门的基础对应。 支持本地搜索、分类浏览、条目直达与资料来源查看。
+- [人体健康与常识 - 器官、体检、营养与急救速查 | Toolbox](https://xsdq-sea.github.io/toolbox/zangfu.html): 查询人体器官与系统、骨骼关节、生命体征、营养素、体检缩写、就医科室及急救基础，另含五脏六腑中医概念。附权威资料来源及适用范围。

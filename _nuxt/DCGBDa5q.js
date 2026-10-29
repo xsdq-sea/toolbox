@@ -1,7 +1,0 @@
-import{_ as a}from"./BLD0Jv2Z.js";import{p as c,c as s,u as i,b as p}from"#entry";import"./CpTnsik7.js";import"./D5Vt90Z3.js";import"./BC0r1Jjo.js";import"./D1Q0mhJZ.js";import"./_NDP371j.js";/* empty css        */function u(e,r){e.pages.uuid=()=>e.define([e.field("count","生成数量","10","number",'min="1" max="1000"'),e.check("upper","大写输出"),e.check("hyphen","保留连字符",!0)],()=>Array.from({length:e.i("count",1,1e3,"数量")},()=>{const t=crypto.getRandomValues(new Uint8Array(16));t[6]=t[6]&15|64,t[8]=t[8]&63|128;let n=Array.from(t,o=>o.toString(16).padStart(2,"0")).join("");return e.checked("hyphen")&&(n=`${n.slice(0,8)}-${n.slice(8,12)}-${n.slice(12,16)}-${n.slice(16,20)}-${n.slice(20)}`),e.checked("upper")?n.toUpperCase():n}).join(`
-`),{auto:!0,button:"生成 UUID v4"}),e.pages["random-picker"]=()=>e.define([e.area("input","候选列表（每行一条）",`小林
-小王
-小陈
-小李
-小张`),e.field("count","抽取数量","2","number",'min="1" max="10000"'),e.check("unique","先去除内容相同的候选项",!0),e.note("不放回抽取。关闭去重时，相同内容的多行会作为多个独立候选项。")],()=>{let t=r.lines(e.v("input")).map(o=>o.trim()).filter(Boolean);e.checked("unique")&&(t=[...new Set(t)]);const n=e.i("count",1,1e4,"抽取数量");if(n>t.length)throw Error("抽取数量不能超过候选数量。");return r.shuffle(t).slice(0,n).join(`
-`)},{auto:!0,button:"随机抽取"})}const y={__name:"random-tools",setup(e){const r=c["random-tools.html"],t=r.operations;return(n,o)=>(p(),s(a,{page:i(r),operations:i(t),register:i(u)},null,8,["page","operations","register"]))}};export{y as default};

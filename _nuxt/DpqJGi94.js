@@ -1,1 +1,0 @@
-import{b as s,c as t,a as l,q as o,s as r}from"#entry";const i={__name:"UiField",props:{as:{type:String,default:"label"}},setup(e){return(a,n)=>(s(),t(r(e.as),{class:"field"},{default:l(()=>[o(a.$slots,"default")]),_:3}))}};export{i as _};

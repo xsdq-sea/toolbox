@@ -1,0 +1,1 @@
+function e(e,{query:t=``,category:n=``}={}){let r=String(t).normalize(`NFKC`).trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);return e.filter(e=>(!n||e.category===n)&&r.every(t=>[e.name,e.category,e.search,...e.aliases||[]].join(` `).normalize(`NFKC`).toLocaleLowerCase().includes(t)))}export{e as t};

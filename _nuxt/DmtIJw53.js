@@ -1,1 +1,0 @@
-function s(a,{query:r="",category:o=""}={}){const l=String(r).normalize("NFKC").trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);return a.filter(e=>(!o||e.category===o)&&l.every(n=>[e.name,e.category,e.search,...e.aliases||[]].join(" ").normalize("NFKC").toLocaleLowerCase().includes(n)))}export{s as f};
