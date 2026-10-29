@@ -10,7 +10,6 @@
 - [警衔与军衔肩章查询 - 人民警察、解放军与武警图鉴 | Toolbox](https://xsdq-sea.github.io/toolbox/rank-insignia.html): 查询中国大陆现行警衔、军衔与武警警衔的名称、等级和肩章图示。支持按星杠特征搜索、等级筛选及军种配色切换，附权威资料来源。
 - [职务与行政级别查询 - 省长、市长、局长是什么级别 | Toolbox](https://xsdq-sea.github.io/toolbox/administrative-levels.html): 按职务、地区机构类型查询常见党政领导职务层次，分别查看综合管理类公务员职级、事业单位管理与专技工勤岗位等级，以及常见专业技术职称名称。
 - [车牌归属地查询 - 民用号牌前缀与地区反查 | Toolbox](https://xsdq-sea.github.io/toolbox/vehicle-plates.html): 输入粤B、浙A等车牌前缀或完整车牌查询常见发牌地区，支持按省级地区筛选、按城市反查。仅查询前缀含义，不查询车辆及车主信息。
-- [亲属称谓查询 - 亲戚关系计算与反向称呼 | Toolbox](https://xsdq-sea.github.io/toolbox/kinship.html): 通过关系按钮或直接输入爸爸的弟弟等亲属关系，查询常用汉语称谓，支持本人性别选择及对方如何称呼我的反向查询。关系在本地计算。
 - [交通标志图鉴 - 常见道路标志含义与外观查询 | Toolbox](https://xsdq-sea.github.io/toolbox/traffic-signs.html): 按名称、分类、颜色和图形特征查询中国大陆常见交通标志，查看简化识别图和含义，区分禁止停车与禁止长时停车、停车让行与减速让行。
 - [衣物洗涤标志查询 - 维护标签与洗衣符号图解 | Toolbox](https://xsdq-sea.github.io/toolbox/laundry-symbols.html): 按图形特征、温度或维护方式查询常见衣物洗涤标志，解释水洗、漂白、翻转干燥、自然干燥、熨烫、专业干洗和湿洗要求。
 - [国家与地区速查 - 名称、旗帜、首都、电话区号与货币 | Toolbox](https://xsdq-sea.github.io/toolbox/countries.html): 本地检索国家与地区的中文英文名称、代码、旗帜、首都或首府、国际电话区号及货币代码，支持按洲别筛选和按区号、货币反查。

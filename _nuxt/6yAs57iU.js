@@ -1,7 +1,0 @@
-import{C as e,K as t,pt as n}from"./B5DVPhlj.js";import{i as r}from"#entry";import{t as i}from"./GGuApUKR.js";function a(e,t){e.pages.uuid=()=>e.define([e.field(`count`,`生成数量`,`10`,`number`,`min="1" max="1000"`),e.check(`upper`,`大写输出`),e.check(`hyphen`,`保留连字符`,!0)],()=>Array.from({length:e.i(`count`,1,1e3,`数量`)},()=>{let t=crypto.getRandomValues(new Uint8Array(16));t[6]=t[6]&15|64,t[8]=t[8]&63|128;let n=Array.from(t,e=>e.toString(16).padStart(2,`0`)).join(``);return e.checked(`hyphen`)&&(n=`${n.slice(0,8)}-${n.slice(8,12)}-${n.slice(12,16)}-${n.slice(16,20)}-${n.slice(20)}`),e.checked(`upper`)?n.toUpperCase():n}).join(`
-`),{auto:!0,button:`生成 UUID v4`}),e.pages[`random-picker`]=()=>e.define([e.area(`input`,`候选列表（每行一条）`,`小林
-小王
-小陈
-小李
-小张`),e.field(`count`,`抽取数量`,`2`,`number`,`min="1" max="10000"`),e.check(`unique`,`先去除内容相同的候选项`,!0),e.note(`不放回抽取。关闭去重时，相同内容的多行会作为多个独立候选项。`)],()=>{let n=t.lines(e.v(`input`)).map(e=>e.trim()).filter(Boolean);e.checked(`unique`)&&(n=[...new Set(n)]);let r=e.i(`count`,1,1e4,`抽取数量`);if(r>n.length)throw Error(`抽取数量不能超过候选数量。`);return t.shuffle(n).slice(0,r).join(`
-`)},{auto:!0,button:`随机抽取`})}var o={__name:`random-tools`,setup(o){let s=r[`random-tools.html`],c=s.operations;return(r,o)=>(t(),e(i,{page:n(s),operations:n(c),register:n(a)},null,8,[`page`,`operations`,`register`]))}};export{o as default};
