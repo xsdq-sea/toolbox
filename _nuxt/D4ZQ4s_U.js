@@ -1,1 +1,0 @@
-import{$ as e,C as t,G as n,J as r,X as i}from"./BrvLG6Wm.js";var a={__name:`UiField`,props:{as:{type:String,default:`label`}},setup(a){return(o,s)=>(n(),t(i(a.as),{class:`field`},{default:e(()=>[r(o.$slots,`default`)]),_:3}))}};export{a as t};
