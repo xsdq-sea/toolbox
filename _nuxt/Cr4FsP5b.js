@@ -1,1 +1,0 @@
-import{C as e,K as t,Y as n,Z as r,et as i}from"./B5DVPhlj.js";var a={__name:`UiStatus`,props:{as:{type:String,default:`p`}},setup(a){return(o,s)=>(t(),e(r(a.as),{class:`status`,role:`status`,"aria-live":`polite`},{default:i(()=>[n(o.$slots,`default`)]),_:3}))}};export{a as t};

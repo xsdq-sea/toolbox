@@ -1,0 +1,1 @@
+import{C as e,Q as t,X as n,q as r,tt as i}from"./BOQlZeXJ.js";var a={__name:`UiStatus`,props:{as:{type:String,default:`p`}},setup(a){return(o,s)=>(r(),e(t(a.as),{class:`status`,role:`status`,"aria-live":`polite`},{default:i(()=>[n(o.$slots,`default`)]),_:3}))}};export{a as t};

@@ -17,6 +17,7 @@
 - [历史朝代与君主查询 - 夏商周至清、年号庙号谥号与在位时间 | Toolbox](https://xsdq-sea.github.io/toolbox/dynasties.html): 在本地查询夏商周至清的主要朝代及并立政权起止时间、君主世系、年号、庙号、谥号与分段在位记录，包含先秦君主，标注早期年代争议并提供资料来源。
 - [常用网站与电话查询 - 银行、保险、投诉与便民服务 | Toolbox](https://xsdq-sea.github.io/toolbox/common-contacts.html): 查询中国大陆常用银行、保险、投诉举报、政务便民、通信、邮政快递、交通出行和紧急求助的官方网站及公开服务热线，支持搜索、分类筛选、号码反查和复制，附官方资料来源。
 - [手机号码归属地查询 - 省市与号段原始运营商 | Toolbox](https://xsdq-sea.github.io/toolbox/phone-location.html): 在浏览器本地查询中国大陆手机号或前7位号段的归属省市、号段原始运营商与虚拟运营商品牌，输入内容不上传、不保存。提供数据日期与来源，不代表携号转网后的当前运营商。
+- [黄历查询 - 农历、每日宜忌与时辰宜忌 | Toolbox](https://xsdq-sea.github.io/toolbox/almanac.html): 免费在线黄历查询，支持1900年至2100年的农历日期、干支生肖、节气节日、每日宜忌、冲煞、财神方位和时辰宜忌，全部在浏览器本地计算，无需上传日期。
 - [人物组合与历史称谓查询 | Toolbox](https://xsdq-sea.github.io/toolbox/historical-people.html): 人物组合、姓名字号、别称、代表作品与庙号谥号年号概念。 支持本地搜索、分类浏览、条目直达与资料来源查看。
 - [国学典籍与诸子百家查询 | Toolbox](https://xsdq-sea.github.io/toolbox/classics-schools.html): 四书五经、十三经、二十四史及诸子学派的书目与代表人物。 支持本地搜索、分类浏览、条目直达与资料来源查看。
 - [科举官职与古代制度查询 | Toolbox](https://xsdq-sea.github.io/toolbox/ancient-institutions.html): 明清科举流程、功名、官职职责、六部、爵位与地方行政沿革。 支持本地搜索、分类浏览、条目直达与资料来源查看。
@@ -26,3 +27,8 @@
 - [传统称谓与礼俗查询 | Toolbox](https://xsdq-sea.github.io/toolbox/traditional-etiquette.html): 年龄称谓、亲属敬谦称、礼仪称呼与婚龄纪念称谓。 支持本地搜索、分类浏览、条目直达与资料来源查看。
 - [五行八卦与八门查询 | Toolbox](https://xsdq-sea.github.io/toolbox/five-elements.html): 五行相生相克、八卦符号与先后天方位、奇门八门的基础对应。 支持本地搜索、分类浏览、条目直达与资料来源查看。
 - [人体健康与常识 - 器官、体检、营养与急救速查 | Toolbox](https://xsdq-sea.github.io/toolbox/zangfu.html): 查询人体器官与系统、骨骼关节、生命体征、营养素、体检缩写、就医科室及急救基础，另含五脏六腑中医概念。附权威资料来源及适用范围。
+- [生活标识图鉴 - 图解与知识查询 | Toolbox](https://xsdq-sea.github.io/toolbox/life-symbols.html): 识别塑料材质、食品接触、电器与包装储运标识，了解图形含义和使用条件。
+- [电脑知识科普 - 硬件型号、超频、光追、DLSS 与常用术语 | Toolbox](https://xsdq-sea.github.io/toolbox/computer-hardware.html): 电脑入门知识查询，含硬件分工图、M.2 NVMe SATA 对照、Core i7-12700 与 H610、Z790、RTX 4060 等型号解读，以及超频、光追、垂直同步、DLSS、帧生成等专业术语，逐条附官方资料。
+- [电脑与手机接口速查 - 图解与知识查询 | Toolbox](https://xsdq-sea.github.io/toolbox/connectors.html): 通过外形简图识别 USB、HDMI、DP、雷电与音频等接口，区分外形和实际连接能力。
+- [常用符号与特殊字符 - 图解与知识查询 | Toolbox](https://xsdq-sea.github.io/toolbox/special-symbols.html): 查询并复制数学、箭头、序号、货币、上下标、希腊字母与排版字符，查看 Unicode 码点。
+- [食品标签名词速查 - 图解与知识查询 | Toolbox](https://xsdq-sea.github.io/toolbox/food-labels.html): 用示例读懂配料表、营养成分表、NRV% 和常见单位，区分现行与新版标签标准。

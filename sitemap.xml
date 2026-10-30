@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://xsdq-sea.github.io/toolbox/search.html</loc></url>
   <url><loc>https://xsdq-sea.github.io/toolbox/</loc></url>
   <url><loc>https://xsdq-sea.github.io/toolbox/income-tax.html</loc></url>
   <url><loc>https://xsdq-sea.github.io/toolbox/loan-calculator.html</loc></url>
@@ -34,6 +35,7 @@
   <url><loc>https://xsdq-sea.github.io/toolbox/dynasties.html</loc></url>
   <url><loc>https://xsdq-sea.github.io/toolbox/common-contacts.html</loc></url>
   <url><loc>https://xsdq-sea.github.io/toolbox/phone-location.html</loc></url>
+  <url><loc>https://xsdq-sea.github.io/toolbox/almanac.html</loc></url>
   <url><loc>https://xsdq-sea.github.io/toolbox/percentage-tools.html</loc></url>
   <url><loc>https://xsdq-sea.github.io/toolbox/url-tools.html</loc></url>
   <url><loc>https://xsdq-sea.github.io/toolbox/cron-tools.html</loc></url>
@@ -50,5 +52,12 @@
   <url><loc>https://xsdq-sea.github.io/toolbox/traditional-etiquette.html</loc></url>
   <url><loc>https://xsdq-sea.github.io/toolbox/five-elements.html</loc></url>
   <url><loc>https://xsdq-sea.github.io/toolbox/zangfu.html</loc></url>
+  <url><loc>https://xsdq-sea.github.io/toolbox/electricity.html</loc></url>
+  <url><loc>https://xsdq-sea.github.io/toolbox/ip-subnet.html</loc></url>
+  <url><loc>https://xsdq-sea.github.io/toolbox/life-symbols.html</loc></url>
+  <url><loc>https://xsdq-sea.github.io/toolbox/computer-hardware.html</loc></url>
+  <url><loc>https://xsdq-sea.github.io/toolbox/connectors.html</loc></url>
+  <url><loc>https://xsdq-sea.github.io/toolbox/special-symbols.html</loc></url>
+  <url><loc>https://xsdq-sea.github.io/toolbox/food-labels.html</loc></url>
   <url><loc>https://xsdq-sea.github.io/toolbox/allocation-tracker.html</loc></url>
 </urlset>
